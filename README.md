@@ -1,4 +1,4 @@
-# __DEVICE AND BROWSER JS__
+# **__DEVICE AND BROWSER JS__**
 ### A minimalistic devices and browsers detection library. ######
 
 > Inspired by the matthewhudson's [DEVICE.JS](https://github.com/matthewhudson/device.js) repo, this library with only 4kb is able to
