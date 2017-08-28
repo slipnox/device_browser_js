@@ -250,7 +250,7 @@ For JavaScript the main device object allows you to checks the following charact
 
 ## **NOTES**
 
-**N1**: _As desktops computers does not rotate screens so often lol :), the orientation feature comes disabled by default if you need this feature on desktop you can enable it invoking the method: `device.activeDesktopOtientation()`_
+**N1**: _As desktops computers only trigger resize event when you resize the browser window, the orientation classes feature comes disabled by default, if you need this feature on desktop you can enable it invoking the method: `device.activeDesktopOtientation()`_
 
 **N2**: _This library relies on the user agent parsing approach and is not perfect. If you find any bugs please summit a ticket and I will fixed ASAP._
 
