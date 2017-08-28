@@ -1,4 +1,4 @@
-# **__DEVICE AND BROWSER JS__**
+# [**DEVICE AND BROWSER JS**](https://github.com/slipnox/device_browser_js#device-and-browser-js)
 ### A minimalistic devices and browsers detection library. ######
 
 > Inspired by the matthewhudson's [DEVICE.JS](https://github.com/matthewhudson/device.js) repo, this library with only 4kb is able to
