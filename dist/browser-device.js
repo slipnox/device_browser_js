@@ -144,10 +144,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   (_documentElement$clas = documentElement.classList).add.apply(_documentElement$clas, _toConsumableArray(htmlClasses.split(' ')));
 
   // FUNCTIONS
+  // use oriatation change event listener or the resize event as al fallback
   var orientationDetection = function orientationDetection() {
     'onorientationchange' in window ? orientationChangeEventMode() : resizeEventMode();
   };
 
+  // detect oriatation using resize event api
   var resizeEventMode = function resizeEventMode() {
     window.addEventListener('resize', function () {
       clearTimeout(rotationTimeOut);
@@ -158,6 +160,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     }, false);
   };
 
+  // detect oriatation using oriatation change event api
   var orientationChangeEventMode = function orientationChangeEventMode() {
     window.addEventListener('orientationchange', function () {
       rotationTimeOut = setTimeout(function () {
@@ -167,6 +170,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     }, false);
   };
 
+  // add rotation orientation classes
   var updateOrientationClass = function updateOrientationClass() {
     documentElement.classList.remove('landscape', 'portrait');
     documentElement.classList.add(device.getOrientation());
