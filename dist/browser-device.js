@@ -14,7 +14,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     return ua.indexOf(deviceName) !== -1;
   };
 
-  // LIBRARY METHODS
+  // device methods
   device.iphone = function () {
     return !device.os.windows() && find('iphone');
   };
@@ -119,7 +119,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     orientationDetection();
   };
 
-  // CLASSES TO APPLY ON HTML TAG
+  // add devices clases
   switch (true) {
     case device.os.ios():
       device.ipad() ? htmlClasses = 'ios ipad tablet' : htmlClasses = 'ios iphone mobile';
@@ -172,10 +172,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     documentElement.classList.add(device.getOrientation());
   };
 
+  // enable oriatation detection on mobile devices
   if (device.mobile()) {
     orientationDetection();
     updateOrientationClass(device.getOrientation());
   }
 
+  // add device to window as a global object.
   window.device = device;
 })(window);

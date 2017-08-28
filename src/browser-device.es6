@@ -8,7 +8,7 @@
     return ua.indexOf(deviceName) !== -1
   }
 
-  // LIBRARY METHODS
+  // device methods
   device.iphone = () => !device.os.windows() && find('iphone')
   device.ipod = () => find('ipod')
   device.ipad = () => find('ipad')
@@ -57,7 +57,7 @@
     orientationDetection()
   }
 
-  // CLASSES TO APPLY ON HTML TAG
+  // add devices clases
   switch (true) {
     case device.os.ios():
       device.ipad()
@@ -118,10 +118,12 @@
     documentElement.classList.add(device.getOrientation())
   }
 
+  // enable oriatation detection on mobile devices
   if (device.mobile()) {
     orientationDetection()
     updateOrientationClass(device.getOrientation())
   }
 
+  // add device to window as a global object.
   window.device = device
 })(window)
