@@ -86,14 +86,14 @@
   documentElement.classList.add(...htmlClasses.split(' '))
 
   // FUNCTIONS
-  // use oriatation change event listener or the resize event as al fallback
+  // use rotation change event listener or the resize event as al fallback
   const orientationDetection = () => {
     ('onorientationchange' in window)
     ? orientationChangeEventMode()
     : resizeEventMode()
   }
 
-  // detect oriatation using resize event api
+  // detect rotation using resize event api
   const resizeEventMode = () => {
     window.addEventListener('resize', () => {
       clearTimeout(rotationTimeOut)
@@ -104,7 +104,7 @@
     }, false)
   }
 
-  // detect oriatation using oriatation change event api
+  // detect rotation using rotation change event api
   const orientationChangeEventMode = () => {
     window.addEventListener('orientationchange', () => {
       rotationTimeOut = setTimeout(() => {
@@ -120,7 +120,7 @@
     documentElement.classList.add(device.getOrientation())
   }
 
-  // enable oriatation detection on mobile devices
+  // enable rotation detection on mobile devices
   if (device.mobile() || device.tablet()) {
     orientationDetection()
     updateOrientationClass(device.getOrientation())
