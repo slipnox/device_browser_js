@@ -8,7 +8,7 @@
 
 The library will attach some CSS classes to the html tag element of the document website and create a new `device` object attached to the global window object.
 
-## SUPPORTS
+## **SUPPORTS**
 
 __BROWSERS DETECTION:__
 
@@ -32,9 +32,7 @@ __OS DETECTION:__
 - Windows
 - Android
 
-
-
-### **CSS CLASS LIST**
+## **CSS CLASS LIST**
 
 CSS classes that are added based on device and orientation.
 
@@ -112,7 +110,7 @@ CSS classes that are added based on device and orientation.
 	</tr>
 </table>
 
-### **CONDITIONAL JAVASCRIPT**
+## **CONDITIONAL JAVASCRIPT**
 
 For JavaScript the main device object allows you to checks the following characteristics:
 
@@ -250,7 +248,7 @@ For JavaScript the main device object allows you to checks the following charact
 	</tr>
 </table>
 
-### **NOTES**
+## **NOTES**
 
 **N1**: _As desktops computers does not rotate screens so often lol :), the orientation feature comes disabled by default if you need this feature on desktop you can enable it invoking the method: `device.activeDesktopOtientation()`_
 
