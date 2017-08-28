@@ -1,0 +1,52 @@
+{
+  "name": "device_browser_js",
+  "version": "0.1.0",
+  "description": "A milimalistic devices and browsers detection library.",
+  "main": "./src/browser-device.es6",
+  "scripts": {
+    "postinstall": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slipnox/device_browser_js.git"
+  },
+  "keywords": [
+    "device",
+    "device detection",
+    "browser detection",
+    "detection"
+  ],
+  "author": "Abrahan Silverio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slipnox/device_browser_js/issues"
+  },
+  "homepage": "https://github.com/slipnox/device_browser_js#readme",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "eslint-config-standard": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-promise": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-babili": "*",
+    "gulp-rename": "*",
+    "standard": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [],
+    "ignore": [
+      "build/*",
+      "dist/*",
+      "node_modules/**"
+    ]
+  }
+}
