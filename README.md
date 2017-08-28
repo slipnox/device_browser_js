@@ -254,7 +254,7 @@ For JavaScript the main device object allows you to checks the following charact
 
 **N2**: _This library relies on the user agent parsing approach and is not perfect. If you find any bugs please summit a ticket and I will fixed ASAP._
 
-**N3**: _Maybe be for some of you guys the library is lacking or missing some super cool features but keep in main that the main idea behind this if keep everything under 5kb as a challenge._
+**N3**: _Maybe be for some of you guys the library is lacking or missing some super cool features but keep in mind that the main idea behind this if keep everything under 5kb as a challenge._
 
 ### If you want to contribute
 
