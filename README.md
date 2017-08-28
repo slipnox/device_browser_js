@@ -23,8 +23,8 @@ __DEVICES DETECTION:__
 - iPhone
 - iPad
 - Android (mobile and tablet)
-- WINDOWS (mobile and tablet)
-- DESKTOP
+- Windows (mobile and tablet)
+- Desktop
 
 __OS DETECTION:__
 
