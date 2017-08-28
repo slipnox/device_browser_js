@@ -55,7 +55,7 @@
     orientationDetection()
   }
 
-  // add devices clases
+  // choose devices clases names
   switch (true) {
     case device.os.ios():
       device.ipad()

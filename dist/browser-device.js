@@ -119,7 +119,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     orientationDetection();
   };
 
-  // add devices clases
+  // choose devices clases names
   switch (true) {
     case device.os.ios():
       device.ipad() ? htmlClasses = 'ios ipad tablet' : htmlClasses = 'ios iphone mobile';
