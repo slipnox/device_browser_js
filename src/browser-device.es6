@@ -4,9 +4,7 @@
   const ua = window.navigator.userAgent.toLowerCase()
   let rotationTimeOut
   let htmlClasses
-  const find = (deviceName) => {
-    return ua.indexOf(deviceName) !== -1
-  }
+  const find = (deviceName) => ua.indexOf(deviceName) !== -1
 
   // device methods
   device.iphone = () => !device.os.windows() && find('iphone')
