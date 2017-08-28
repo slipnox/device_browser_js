@@ -173,7 +173,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   };
 
   // enable oriatation detection on mobile devices
-  if (device.mobile()) {
+  if (device.mobile() || device.tablet()) {
     orientationDetection();
     updateOrientationClass(device.getOrientation());
   }

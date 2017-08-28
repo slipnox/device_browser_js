@@ -117,7 +117,7 @@
   }
 
   // enable oriatation detection on mobile devices
-  if (device.mobile()) {
+  if (device.mobile() || device.tablet()) {
     orientationDetection()
     updateOrientationClass(device.getOrientation())
   }
