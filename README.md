@@ -38,12 +38,9 @@ __OS DETECTION:__
 
 CSS classes that are added based on device and orientation.
 
-#### Device CSS Class Names
+### Device CSS Class Names
 
 <table>
-	<tr>
-		<th>CSS Classes</th>
-	</tr>
 	<tr>
 		<td>iPad</td>
 		<td>ios ipad tablet</td>
